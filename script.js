@@ -7,12 +7,12 @@ const btn = document.getElementById('btn'),
       circle = square.querySelector('#circle'),
       eBtn = square.querySelector('#e_btn');
 
-      console.log(circle);
-
 const changeColor = function() {
    const value = text.value.trim();
-   square.style.backgroundColor = value;
-   text.value = '';
+   if(value !== '') {
+      square.style.backgroundColor = value;
+      text.value = '';
+   }
 };
 
 const changeSize = function() {
